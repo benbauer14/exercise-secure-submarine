@@ -14,7 +14,7 @@ router.get('/temp',rejectUnauthenticated, (req, res) => {
   // GET route code here
   console.log(req.user.username)
   if(req.user.username){
-    res.send('secrets secrets hurt someone')
+    res.send('secrets secrets hurt someone') //when logged in on local3000, when visiting local5000/api/temp/temp
   }else{
     res.sendStatus(503)
   }
